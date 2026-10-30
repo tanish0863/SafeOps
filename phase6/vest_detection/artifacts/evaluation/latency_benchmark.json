@@ -1,0 +1,13 @@
+{
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "cuda_latency_mean_ms": 10.45,
+  "cuda_latency_median_ms": 8.94,
+  "cuda_latency_p95_ms": 18.72,
+  "cuda_fps": 95.7,
+  "torso_latency_mean_ms": 21.66,
+  "cpu_latency_mean_ms": 37.32,
+  "cpu_fps": 26.8,
+  "vram_allocated_mb": 11.55,
+  "vram_reserved_mb": 40.0,
+  "vram_peak_allocated_mb": 26.78
+}
