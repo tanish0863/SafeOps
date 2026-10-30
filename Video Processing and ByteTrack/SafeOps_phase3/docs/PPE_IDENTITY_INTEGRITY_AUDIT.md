@@ -84,3 +84,4 @@ Automated regression coverage for these safety policies is codified in [`tests/t
 - `test_audit_situation_d_exit_and_reentry`: PASSED
 
 All tests execute in $< 0.30\text{ seconds}$ with zero external model dependencies.
+

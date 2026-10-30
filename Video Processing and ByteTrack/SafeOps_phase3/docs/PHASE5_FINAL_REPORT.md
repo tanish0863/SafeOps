@@ -251,3 +251,4 @@ To advance SafeOps from pilot validation to enterprise-scale industrial deployme
    - *Objective*: Store visual embeddings in a lightweight vector database (e.g., Chroma or FAISS) to maintain global worker profiles across multiple CCTV camera viewpoints on large industrial sites.
 5. **Dynamic Video Frame Decimation**:
    - *Objective*: For 30+ FPS cameras on resource-constrained edge devices, implement dynamic frame decimation (processing detection every 2nd frame while updating Kalman filters on every frame) to sustain 50+ FPS processing.
+

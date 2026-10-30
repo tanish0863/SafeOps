@@ -182,3 +182,4 @@ def test_audit_situation_d_exit_and_reentry():
     assert c7.overall_status == ComplianceStatus.INSUFFICIENT_EVIDENCE
     assert c7.observation_count == 1
     assert c7.active_violation is False
+

@@ -77,3 +77,4 @@ Representative frames were extracted to `outputs/phase5_real_video/`:
 ## 5. Audit Verdict
 
 Full real-world video processing conclusively demonstrates that the SafeOps tracking and safety architecture operates at real-time speeds (23.7 FPS) with minimal GPU memory footprint (358 MB), maintaining unbroken worker identity continuity across an extended 848-frame CCTV sequence without crashes, memory leaks, or identity swaps.
+

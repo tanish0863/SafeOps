@@ -93,3 +93,4 @@ The table below summarizes the failure distribution across the four difficult sc
 1. **Tracker vs. Detector Separation:** 74% of False Negatives in crossing and occlusion scenarios originate from the detector (NMS suppression during bounding box overlap and feature occlusion), not the tracking association algorithm.
 2. **BoT-SORT Superiority on Crossings:** BoT-SORT's independent width/height Kalman dynamics eliminate aspect ratio velocity divergence, providing measurably superior tracking through crossing intersections.
 3. **Absence Recovery Boundary:** Pure spatial motion trackers are incapable of re-associating workers who leave the frame and re-enter at a different location. This is an intrinsic architectural limitation of spatial-only MOT, not a bug.
+

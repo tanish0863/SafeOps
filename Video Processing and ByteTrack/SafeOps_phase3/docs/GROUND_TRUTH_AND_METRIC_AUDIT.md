@@ -111,3 +111,4 @@ Both tracking engines were evaluated across all 6 benchmark scenarios. Predictio
    The custom `mot_metrics.py` implementation is mathematically sound, conforms to standard academic MOT conventions (Ristani et al. 2016 for IDF1; Luiten et al. 2021 for HOTA), and produces identical results to `py-motmetrics` 1.4.0.
 3. **Ground-Truth Preservation:**  
    Despite the documented Scenario 5/6 automated annotation swap and unannotated background plates, the benchmark files remain strictly preserved without modification to guarantee unbroken reproducibility across SafeOps phases.
+

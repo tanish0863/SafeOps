@@ -66,3 +66,4 @@ Per the strict audit guidelines, the system did not claim safety vest detection.
 ## 4. Audit Verdict
 
 Real-world image validation confirmed that the person detection and anatomical keypoint association layers function robustly on authentic industrial imagery. However, the existing lightweight helmet model (`models/ppe_helmet.pt`) suffers from significant sensitivity drop-off on small-scale heads, requiring either higher input resolution or keypoint-guided crop re-scaling in deployment.
+

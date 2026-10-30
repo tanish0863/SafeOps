@@ -82,3 +82,4 @@ shutil.copyfile(str(jsonl_path), str(ROOT_OUT_DIR / "tracks.jsonl"))
 shutil.copyfile(str(report_path), str(ROOT_OUT_DIR / "report.json"))
 
 print("Finalized real video metrics and replicated to root.")
+
