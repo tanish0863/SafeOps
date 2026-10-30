@@ -1,0 +1,9 @@
+# Starting values, not tuned. Tune on your own test videos.
+tracker_type: bytetrack
+
+track_high_thresh: 0.25   # first-pass association
+track_low_thresh: 0.10    # second pass: recover tracks with weak detections
+new_track_thresh: 0.25    # confidence needed to start a new track
+track_buffer: 60          # frames a lost track is kept (scaled by fps/30 internally)
+match_thresh: 0.80        # IoU-distance matching threshold
+fuse_score: True          # fuse detection confidence into matching cost

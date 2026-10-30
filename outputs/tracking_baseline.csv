@@ -1,0 +1,7 @@
+Configuration,Scenario,IDF1,HOTA,MOTA,IDSW,FP,FN,Track_IDs,Fragments,Mostly_Tracked,Partially_Tracked,Mostly_Lost,Recall,Precision,FPS,Mean_Latency_ms,P95_Latency_ms,VRAM_Alloc_MB
+Baseline ByteTrack,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,1,0,0,1.0,1.0,50.62,17.25,19.83,111.63
+Baseline ByteTrack,Crossing paths,0.3774,0.4737,-0.375,2,147,16,14,1,1,1,0,0.8667,0.4143,43.66,21.56,26.37,68.55
+Baseline ByteTrack,Workers close together,1.0,1.0,1.0,0,0,0,2,0,2,0,0,1.0,1.0,52.49,17.63,25.99,156.69
+Baseline ByteTrack,Exit and re-entry,0.188,0.3402,-2.34,1,166,0,8,0,1,0,0,1.0,0.2315,48.24,19.46,27.71,206.12
+Baseline ByteTrack,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,1,0,0,0.8833,0.469,51.01,18.22,25.15,251.24
+Baseline ByteTrack,Partial occlusion,0.2294,0.3351,-1.65,3,127,29,6,2,0,1,0,0.5167,0.1962,55.22,16.75,23.67,340.27

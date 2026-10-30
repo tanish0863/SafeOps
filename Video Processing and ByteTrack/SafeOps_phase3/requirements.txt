@@ -1,0 +1,11 @@
+# PyTorch is NOT listed: keep your existing CUDA build in .venv-gpu.
+ultralytics
+opencv-python
+numpy
+lapx
+scipy
+fastapi
+uvicorn
+pydantic
+python-multipart
+pyyaml

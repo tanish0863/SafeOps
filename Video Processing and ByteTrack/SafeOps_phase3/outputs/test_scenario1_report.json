@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "video_id": "scenario1_single_worker_moving",
+  "metadata": {
+    "video_id": "scenario1_single_worker_moving",
+    "filename": "scenario1_single_worker_moving.mp4",
+    "fps": 30.0,
+    "width": 1280,
+    "height": 720,
+    "total_frames": 60,
+    "duration_seconds": 2.0
+  },
+  "policy": {
+    "policy_name": "Standard Industrial Safety Policy",
+    "require_helmet": true,
+    "require_vest": false,
+    "min_observations_for_decision": 15,
+    "violation_confirmation_seconds": 1.0,
+    "recovery_confirmation_seconds": 1.0
+  },
+  "summary": {
+    "total_frames_processed": 60,
+    "duration_seconds": 1.967,
+    "average_fps": 10.51,
+    "unique_workers_tracked": 1,
+    "total_violations_detected": 1,
+    "compliance_rate_percent": 0.0
+  },
+  "workers": [
+    {
+      "track_id": 1,
+      "first_seen_timestamp": 0.0,
+      "last_seen_timestamp": 1.967,
+      "total_frames_present": 60,
+      "compliance_status": "non_compliant",
+      "violations_count": 1
+    }
+  ],
+  "violations": [
+    {
+      "event_id": "VIOL-72E080BF",
+      "track_id": 1,
+      "violation_type": "missing_helmet",
+      "start_timestamp": 0.467,
+      "end_timestamp": 1.967,
+      "status": "confirmed",
+      "evidence_frames": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "confidence": 1.0,
+      "summary": "Worker 1 confirmed missing helmet"
+    }
+  ],
+  "created_at": "2026-10-30T17:49:08.233583+00:00"
+}

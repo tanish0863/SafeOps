@@ -1,0 +1,31 @@
+Configuration,Scenario,IDF1,HOTA,MOTA,IDSW,FP,FN,Track_IDs,Fragments,FPS,Mean_Latency_ms,P95_Latency_ms,Peak_VRAM_MB
+Current ByteTrack,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,34.17,25.92,26.03,111.63
+Current ByteTrack,Crossing paths,0.3774,0.4737,-0.375,2,147,16,14,1,36.2,26.14,34.73,68.55
+Current ByteTrack,Workers close together,1.0,1.0,1.0,0,0,0,2,0,36.14,26.34,29.51,156.69
+Current ByteTrack,Exit and re-entry,0.188,0.3402,-2.34,1,166,0,8,0,38.62,24.57,26.34,206.12
+Current ByteTrack,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,36.56,26.0,30.56,251.24
+Current ByteTrack,Partial occlusion,0.2294,0.3351,-1.65,3,127,29,6,2,33.66,27.98,35.28,340.27
+Optimized ByteTrack,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,34.81,25.72,34.88,362.86
+Optimized ByteTrack,Crossing paths,0.3778,0.477,-0.3167,2,138,18,9,2,38.16,24.93,29.44,111.63
+Optimized ByteTrack,Workers close together,1.0,1.0,1.0,0,0,0,2,0,39.55,24.0,24.32,199.62
+Optimized ByteTrack,Exit and re-entry,0.1916,0.3442,-2.24,1,161,0,7,0,40.42,23.58,26.58,241.09
+Optimized ByteTrack,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,37.55,25.29,28.58,285.7
+Optimized ByteTrack,Partial occlusion,0.2304,0.3374,-1.5833,2,125,28,5,2,37.31,25.47,29.81,374.74
+BoT-SORT without ReID,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,39.51,23.0,23.92,98.08
+BoT-SORT without ReID,Crossing paths,0.4378,0.5475,-0.3417,3,144,14,12,1,38.17,24.84,27.4,142.63
+BoT-SORT without ReID,Workers close together,1.0,1.0,1.0,0,0,0,2,0,38.05,24.95,29.99,231.43
+BoT-SORT without ReID,Exit and re-entry,0.1901,0.3426,-2.28,1,163,0,8,0,40.58,23.46,25.25,289.72
+BoT-SORT without ReID,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,39.59,23.91,25.85,334.84
+BoT-SORT without ReID,Partial occlusion,0.2283,0.3326,-1.6333,3,127,28,6,2,35.58,26.82,25.32,357.73
+BoT-SORT with ReID,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,36.0,25.56,32.6,120.29
+BoT-SORT with ReID,Crossing paths,0.4343,0.5444,-0.3667,3,147,14,10,1,36.87,25.78,28.35,167.77
+BoT-SORT with ReID,Workers close together,1.0,1.0,1.0,0,0,0,2,0,36.51,26.01,26.87,265.22
+BoT-SORT with ReID,Exit and re-entry,0.1894,0.3376,-2.34,1,165,1,9,1,37.89,25.13,27.1,361.04
+BoT-SORT with ReID,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,37.74,25.16,28.87,119.64
+BoT-SORT with ReID,Partial occlusion,0.2283,0.3356,-1.6167,2,127,28,6,2,31.15,30.73,36.24,216.96
+BoT-SORT with GMC,Single worker moving,1.0,1.0,1.0,0,0,0,1,0,19.97,47.0,59.98,232.93
+BoT-SORT with GMC,Crossing paths,0.4378,0.5475,-0.3417,3,144,14,12,1,19.12,49.68,61.33,271.67
+BoT-SORT with GMC,Workers close together,1.0,1.0,1.0,0,0,0,2,0,22.68,42.0,54.28,360.18
+BoT-SORT with GMC,Exit and re-entry,0.1908,0.3392,-2.3,1,163,1,9,1,30.26,31.64,36.2,111.54
+BoT-SORT with GMC,Detection failure gap,0.4046,0.4935,-0.15,2,60,7,2,1,25.41,37.92,44.65,149.49
+BoT-SORT with GMC,Partial occlusion,0.2283,0.3326,-1.6333,3,127,28,6,2,23.54,40.83,46.39,237.8

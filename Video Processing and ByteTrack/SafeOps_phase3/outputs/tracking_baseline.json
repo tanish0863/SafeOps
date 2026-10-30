@@ -1,0 +1,170 @@
+{
+  "scenario1_single_worker_moving": {
+    "scenario_name": "Single worker moving",
+    "scenario_tag": "scenario1_single_worker_moving",
+    "video_path": "videos/scenarios/scenario1_single_worker_moving.mp4",
+    "frames_processed": 60,
+    "metrics": {
+      "idf1": 1.0,
+      "hota": 1.0,
+      "mota": 1.0,
+      "id_switches": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_track_ids": 1,
+      "fragmentation": 0,
+      "mostly_tracked": 1,
+      "partially_tracked": 0,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 1.0,
+      "precision": 1.0
+    },
+    "performance": {
+      "processing_fps": 50.62,
+      "mean_latency_ms": 17.25,
+      "p95_latency_ms": 19.83,
+      "peak_vram_allocated_mb": 111.63,
+      "peak_vram_reserved_mb": 142.0
+    }
+  },
+  "scenario2_two_workers_crossing": {
+    "scenario_name": "Crossing paths",
+    "scenario_tag": "scenario2_two_workers_crossing",
+    "video_path": "videos/scenarios/scenario2_two_workers_crossing.mp4",
+    "frames_processed": 60,
+    "metrics": {
+      "idf1": 0.3774,
+      "hota": 0.4737,
+      "mota": -0.375,
+      "id_switches": 2,
+      "false_positives": 147,
+      "false_negatives": 16,
+      "unique_track_ids": 14,
+      "fragmentation": 1,
+      "mostly_tracked": 1,
+      "partially_tracked": 1,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 0.8667,
+      "precision": 0.4143
+    },
+    "performance": {
+      "processing_fps": 43.66,
+      "mean_latency_ms": 21.56,
+      "p95_latency_ms": 26.37,
+      "peak_vram_allocated_mb": 68.55,
+      "peak_vram_reserved_mb": 142.0
+    }
+  },
+  "scenario3_two_workers_close_together": {
+    "scenario_name": "Workers close together",
+    "scenario_tag": "scenario3_two_workers_close_together",
+    "video_path": "videos/scenarios/scenario3_two_workers_close_together.mp4",
+    "frames_processed": 60,
+    "metrics": {
+      "idf1": 1.0,
+      "hota": 1.0,
+      "mota": 1.0,
+      "id_switches": 0,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "unique_track_ids": 2,
+      "fragmentation": 0,
+      "mostly_tracked": 2,
+      "partially_tracked": 0,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 1.0,
+      "precision": 1.0
+    },
+    "performance": {
+      "processing_fps": 52.49,
+      "mean_latency_ms": 17.63,
+      "p95_latency_ms": 25.99,
+      "peak_vram_allocated_mb": 156.69,
+      "peak_vram_reserved_mb": 178.0
+    }
+  },
+  "scenario4_worker_leaving_reentering": {
+    "scenario_name": "Exit and re-entry",
+    "scenario_tag": "scenario4_worker_leaving_reentering",
+    "video_path": "videos/scenarios/scenario4_worker_leaving_reentering.mp4",
+    "frames_processed": 80,
+    "metrics": {
+      "idf1": 0.188,
+      "hota": 0.3402,
+      "mota": -2.34,
+      "id_switches": 1,
+      "false_positives": 166,
+      "false_negatives": 0,
+      "unique_track_ids": 8,
+      "fragmentation": 0,
+      "mostly_tracked": 1,
+      "partially_tracked": 0,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 1.0,
+      "precision": 0.2315
+    },
+    "performance": {
+      "processing_fps": 48.24,
+      "mean_latency_ms": 19.46,
+      "p95_latency_ms": 27.71,
+      "peak_vram_allocated_mb": 206.12,
+      "peak_vram_reserved_mb": 236.0
+    }
+  },
+  "scenario5_temp_detection_failure": {
+    "scenario_name": "Detection failure gap",
+    "scenario_tag": "scenario5_temp_detection_failure",
+    "video_path": "videos/scenarios/scenario5_temp_detection_failure.mp4",
+    "frames_processed": 60,
+    "metrics": {
+      "idf1": 0.4046,
+      "hota": 0.4935,
+      "mota": -0.15,
+      "id_switches": 2,
+      "false_positives": 60,
+      "false_negatives": 7,
+      "unique_track_ids": 2,
+      "fragmentation": 1,
+      "mostly_tracked": 1,
+      "partially_tracked": 0,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 0.8833,
+      "precision": 0.469
+    },
+    "performance": {
+      "processing_fps": 51.01,
+      "mean_latency_ms": 18.22,
+      "p95_latency_ms": 25.15,
+      "peak_vram_allocated_mb": 251.24,
+      "peak_vram_reserved_mb": 272.0
+    }
+  },
+  "scenario6_partial_occlusion": {
+    "scenario_name": "Partial occlusion",
+    "scenario_tag": "scenario6_partial_occlusion",
+    "video_path": "videos/scenarios/scenario6_partial_occlusion.mp4",
+    "frames_processed": 60,
+    "metrics": {
+      "idf1": 0.2294,
+      "hota": 0.3351,
+      "mota": -1.65,
+      "id_switches": 3,
+      "false_positives": 127,
+      "false_negatives": 29,
+      "unique_track_ids": 6,
+      "fragmentation": 2,
+      "mostly_tracked": 0,
+      "partially_tracked": 1,
+      "mostly_lost": 0,
+      "detection_coverage_recall": 0.5167,
+      "precision": 0.1962
+    },
+    "performance": {
+      "processing_fps": 55.22,
+      "mean_latency_ms": 16.75,
+      "p95_latency_ms": 23.67,
+      "peak_vram_allocated_mb": 340.27,
+      "peak_vram_reserved_mb": 364.0
+    }
+  }
+}

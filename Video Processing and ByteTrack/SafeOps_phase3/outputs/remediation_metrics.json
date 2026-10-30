@@ -1,0 +1,124 @@
+{
+  "remediation_phase": "Phase 3 P0 Critical Correctness Remediation",
+  "timestamp": "2026-10-30T19:07:00Z",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "torch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "total_vram_mb": 6144.0
+  },
+  "test_execution": {
+    "total_collected": 45,
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate_pct": 100.0,
+    "duration_seconds": 8.82,
+    "module_breakdown": {
+      "tests/test_api_integration.py": {"collected": 4, "passed": 4, "failed": 0},
+      "tests/test_bytetrack_reliability.py": {"collected": 7, "passed": 7, "failed": 0},
+      "tests/test_compliance_engine.py": {"collected": 12, "passed": 12, "failed": 0},
+      "tests/test_mot_metrics.py": {"collected": 8, "passed": 8, "failed": 0},
+      "tests/test_ppe_association.py": {"collected": 9, "passed": 9, "failed": 0},
+      "tests/test_video_pipeline_robustness.py": {"collected": 5, "passed": 5, "failed": 0}
+    }
+  },
+  "profiling_latency_breakdown_ms": {
+    "pose_detector_inference": 14.82,
+    "helmet_detector_inference": 13.91,
+    "bytetrack_overhead": 1.25,
+    "anatomical_association": 0.42,
+    "temporal_compliance_engine": 0.38,
+    "video_annotation_io": 3.42,
+    "end_to_end_pipeline_latency": 34.20,
+    "end_to_end_fps": 29.24
+  },
+  "sustained_production_run": {
+    "video": "test_video.mp4",
+    "frames_processed": 848,
+    "video_fps": 29.97,
+    "resolution": "854x480",
+    "total_processing_time_s": 15.411,
+    "average_fps": 55.03,
+    "peak_vram_allocated_mb": 175.59,
+    "peak_vram_reserved_mb": 194.0,
+    "average_gpu_utilization_pct": 33.4
+  },
+  "ground_truth_scenarios": {
+    "scenario1_single_worker_moving": {
+      "frames": 60,
+      "gt_trajectories": 1,
+      "actual_track_ids": 1,
+      "idsw": 0,
+      "idf1": 1.0,
+      "hota": 1.0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "scenario2_two_workers_crossing": {
+      "frames": 60,
+      "gt_trajectories": 2,
+      "actual_track_ids": 14,
+      "idsw": 2,
+      "idf1": 0.3774,
+      "hota": 0.4737,
+      "recall": 0.8667,
+      "precision": 0.4143
+    },
+    "scenario3_two_workers_close_together": {
+      "frames": 60,
+      "gt_trajectories": 2,
+      "actual_track_ids": 2,
+      "idsw": 0,
+      "idf1": 1.0,
+      "hota": 1.0,
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    "scenario4_worker_leaving_reentering": {
+      "frames": 80,
+      "gt_trajectories": 1,
+      "actual_track_ids": 8,
+      "idsw": 1,
+      "idf1": 0.1880,
+      "hota": 0.3402,
+      "recall": 1.0,
+      "precision": 0.2315
+    },
+    "scenario5_temp_detection_failure": {
+      "frames": 60,
+      "gt_trajectories": 1,
+      "actual_track_ids": 2,
+      "idsw": 2,
+      "idf1": 0.4046,
+      "hota": 0.4935,
+      "recall": 0.8833,
+      "precision": 0.4690
+    },
+    "scenario6_partial_occlusion": {
+      "frames": 60,
+      "gt_trajectories": 1,
+      "actual_track_ids": 6,
+      "idsw": 3,
+      "idf1": 0.2294,
+      "hota": 0.3351,
+      "recall": 0.5167,
+      "precision": 0.1962
+    }
+  },
+  "remediation_status": {
+    "defect_1_ppe_association_head_roi": {
+      "status": "REMEDIATED",
+      "verification": "CONFIRMED/APPROXIMATE/UNKNOWN ROI classification prevents unconfirmed fallback stealing. Verified across 9 tests in test_ppe_association.py."
+    },
+    "defect_2_compliance_during_occlusion": {
+      "status": "REMEDIATED",
+      "verification": "Explicit UNKNOWN observation handling, temporal window pruning, frozen evidence frames during occlusion, suspended violation lifecycle. Verified across 12 tests in test_compliance_engine.py."
+    },
+    "defect_3_tracking_metrics_and_docs": {
+      "status": "REMEDIATED",
+      "verification": "IoU non-negative width/height clamping guards against inverted/zero coordinates. Real benchmark telemetry updated in docs/TESTING_REPORT.md. Verified across 8 tests in test_mot_metrics.py."
+    }
+  }
+}
+

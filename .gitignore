@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv*/
+**/venv/
+**/.venv*/
+ENV/
+env/
+
+# Pytest / coverage
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+
+# Video files (large binaries)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Large Model weights
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Datasets and archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+PPE_Guard/datasets/coco-pose/
+PPE_Guard/datasets/coco8-pose/
+PPE_Guard/datasets/downloads/
+datasets/coco-pose/
+datasets/coco8-pose/
+datasets/downloads/
+
+# Preserve specific tracked baseline model
+!models/helmet/best.pt
+!Video Processing and ByteTrack/SafeOps_phase3/models/helmet/best.pt
+
+# Output videos and transient upload/processed files
+outputs/*.mp4
+**/outputs/*.mp4
+outputs/uploads/*
+**/outputs/uploads/*
+outputs/processed/*
+**/outputs/processed/*
+!outputs/uploads/.gitkeep
+!**/outputs/uploads/.gitkeep
+!outputs/processed/.gitkeep
+!**/outputs/processed/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

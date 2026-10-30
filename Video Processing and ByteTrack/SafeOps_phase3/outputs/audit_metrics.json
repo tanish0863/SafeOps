@@ -1,0 +1,49 @@
+{
+  "platform": {
+    "gpu_device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "total_vram_mb": 6143.5,
+    "cuda_version": "12.4",
+    "torch_version": "2.6.0+cu124"
+  },
+  "benchmarked_frames": 150,
+  "actual_end_to_end_fps": 27.63,
+  "peak_vram_allocated_mb": 74.43,
+  "peak_vram_reserved_mb": 102.0,
+  "component_latencies_ms": {
+    "video_decode": {
+      "mean": 1.18,
+      "std": 0.35,
+      "p95": 1.71
+    },
+    "pose_inference": {
+      "mean": 16.93,
+      "std": 5.26,
+      "p95": 27.94
+    },
+    "ppe_inference": {
+      "mean": 15.11,
+      "std": 4.14,
+      "p95": 24.62
+    },
+    "association": {
+      "mean": 0.05,
+      "std": 0.02,
+      "p95": 0.08
+    },
+    "compliance": {
+      "mean": 0.11,
+      "std": 0.04,
+      "p95": 0.16
+    },
+    "annotation_and_write": {
+      "mean": 2.7,
+      "std": 1.55,
+      "p95": 3.54
+    },
+    "end_to_end_frame": {
+      "mean": 36.19,
+      "std": 8.71,
+      "p95": 54.92
+    }
+  }
+}

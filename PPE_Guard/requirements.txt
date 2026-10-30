@@ -1,0 +1,6 @@
+# Install CUDA-enabled PyTorch FIRST from https://pytorch.org/get-started/locally/
+ultralytics
+opencv-python
+numpy
+pydantic>=2
+pytest
