@@ -1,0 +1,1151 @@
+[
+  {
+    "image_name": "real_img_01_single_helmet.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Single worker wearing yellow hard hat",
+    "dimensions": "349x234",
+    "workers_detected": 7,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.941,
+        "bbox": [
+          18.3,
+          71.6,
+          96.8,
+          232.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.897,
+        "bbox": [
+          175.7,
+          72.4,
+          234.2,
+          232.8
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.882,
+        "bbox": [
+          258.5,
+          62.5,
+          346.2,
+          231.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.871,
+        "bbox": [
+          107.0,
+          77.7,
+          180.8,
+          232.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.808,
+        "bbox": [
+          221.8,
+          71.1,
+          289.5,
+          232.2
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.802,
+        "bbox": [
+          97.3,
+          79.9,
+          134.6,
+          231.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.465,
+        "bbox": [
+          339.2,
+          69.1,
+          349.0,
+          234.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_01_single_helmet_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_02_multiple_workers.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Multiple workers on industrial site",
+    "dimensions": "349x240",
+    "workers_detected": 8,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.902,
+        "bbox": [
+          31.1,
+          71.8,
+          128.6,
+          235.4
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.89,
+        "bbox": [
+          217.2,
+          106.5,
+          317.0,
+          239.4
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.823,
+        "bbox": [
+          210.6,
+          51.0,
+          253.8,
+          128.7
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.79,
+        "bbox": [
+          179.6,
+          31.4,
+          213.3,
+          92.8
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.789,
+        "bbox": [
+          2.2,
+          32.5,
+          38.0,
+          105.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.748,
+        "bbox": [
+          94.7,
+          31.1,
+          123.5,
+          130.2
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.655,
+        "bbox": [
+          146.2,
+          132.5,
+          227.0,
+          238.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 8,
+        "confidence": 0.642,
+        "bbox": [
+          134.5,
+          37.6,
+          167.8,
+          106.6
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_02_multiple_workers_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_03_no_helmet.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Worker without helmet (bare head)",
+    "dimensions": "349x232",
+    "workers_detected": 8,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.893,
+        "bbox": [
+          0.0,
+          138.1,
+          84.5,
+          230.3
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.891,
+        "bbox": [
+          126.4,
+          93.2,
+          215.7,
+          214.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.865,
+        "bbox": [
+          34.1,
+          99.7,
+          118.5,
+          212.1
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.82,
+        "bbox": [
+          231.0,
+          100.2,
+          344.7,
+          229.2
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.693,
+        "bbox": [
+          176.5,
+          73.4,
+          245.3,
+          180.1
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.426,
+        "bbox": [
+          99.9,
+          54.0,
+          139.3,
+          117.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.264,
+        "bbox": [
+          22.8,
+          38.4,
+          57.7,
+          120.0
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "unknown",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 8,
+        "confidence": 0.252,
+        "bbox": [
+          0.0,
+          11.7,
+          19.3,
+          122.8
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "unknown",
+        "reason": "missing_head_keypoints"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_03_no_helmet_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_04_overlapping_workers.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Workers close together with partial overlap",
+    "dimensions": "349x233",
+    "workers_detected": 9,
+    "helmets_detected": 2,
+    "unassociated_helmets": 1,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.913,
+        "bbox": [
+          266.0,
+          56.0,
+          318.5,
+          218.6
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.862,
+        "bbox": [
+          42.5,
+          47.6,
+          76.1,
+          196.4
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.854,
+        "bbox": [
+          71.6,
+          49.5,
+          114.0,
+          195.9
+        ],
+        "helmet_status": "detected",
+        "helmet_confidence": 0.255,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "matched_anatomical_region"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.831,
+        "bbox": [
+          173.5,
+          33.8,
+          220.0,
+          230.4
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.808,
+        "bbox": [
+          105.4,
+          50.6,
+          143.4,
+          199.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.761,
+        "bbox": [
+          136.1,
+          51.7,
+          173.5,
+          194.7
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.673,
+        "bbox": [
+          204.4,
+          21.7,
+          261.5,
+          231.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 8,
+        "confidence": 0.573,
+        "bbox": [
+          168.6,
+          52.7,
+          194.4,
+          184.3
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 9,
+        "confidence": 0.524,
+        "bbox": [
+          259.8,
+          48.2,
+          282.0,
+          175.1
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_04_overlapping_workers_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_05_distant_workers.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Distant and small-scale workers",
+    "dimensions": "349x196",
+    "workers_detected": 7,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.889,
+        "bbox": [
+          302.2,
+          48.1,
+          338.5,
+          136.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.812,
+        "bbox": [
+          40.2,
+          66.7,
+          84.0,
+          190.8
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.794,
+        "bbox": [
+          237.6,
+          43.4,
+          283.8,
+          160.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.731,
+        "bbox": [
+          171.0,
+          58.9,
+          193.6,
+          129.4
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.696,
+        "bbox": [
+          113.2,
+          65.2,
+          141.7,
+          147.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.642,
+        "bbox": [
+          136.9,
+          62.7,
+          162.6,
+          141.7
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.399,
+        "bbox": [
+          154.6,
+          62.8,
+          173.2,
+          135.6
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_05_distant_workers_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_06_partially_occluded.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Worker partially occluded by industrial railing",
+    "dimensions": "349x244",
+    "workers_detected": 10,
+    "helmets_detected": 1,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.891,
+        "bbox": [
+          74.8,
+          58.7,
+          140.7,
+          244.0
+        ],
+        "helmet_status": "detected",
+        "helmet_confidence": 0.201,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "matched_anatomical_region"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.88,
+        "bbox": [
+          186.0,
+          82.2,
+          231.3,
+          212.8
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.869,
+        "bbox": [
+          279.1,
+          76.0,
+          329.6,
+          232.5
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.859,
+        "bbox": [
+          222.5,
+          67.1,
+          295.3,
+          244.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.849,
+        "bbox": [
+          27.2,
+          91.5,
+          61.0,
+          184.5
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.833,
+        "bbox": [
+          152.6,
+          88.2,
+          194.0,
+          224.7
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 7,
+        "confidence": 0.832,
+        "bbox": [
+          121.6,
+          78.1,
+          160.9,
+          244.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 8,
+        "confidence": 0.79,
+        "bbox": [
+          0.0,
+          92.4,
+          24.2,
+          199.2
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 9,
+        "confidence": 0.715,
+        "bbox": [
+          328.3,
+          47.1,
+          349.0,
+          242.2
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "unknown",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 10,
+        "confidence": 0.646,
+        "bbox": [
+          59.5,
+          98.4,
+          80.6,
+          182.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_06_partially_occluded_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_07_outdoor_bright.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "High contrast direct sunlight",
+    "dimensions": "349x233",
+    "workers_detected": 6,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.832,
+        "bbox": [
+          56.1,
+          133.8,
+          102.5,
+          231.7
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.831,
+        "bbox": [
+          148.2,
+          136.0,
+          195.7,
+          231.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.789,
+        "bbox": [
+          198.6,
+          132.9,
+          244.8,
+          230.6
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.743,
+        "bbox": [
+          239.0,
+          82.4,
+          267.0,
+          186.4
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.526,
+        "bbox": [
+          192.3,
+          57.0,
+          222.8,
+          139.9
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 6,
+        "confidence": 0.386,
+        "bbox": [
+          262.1,
+          87.1,
+          297.3,
+          171.7
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_07_outdoor_bright_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_08_indoor_shadowed.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Indoor factory floor with shadowing",
+    "dimensions": "349x233",
+    "workers_detected": 5,
+    "helmets_detected": 1,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.932,
+        "bbox": [
+          5.7,
+          39.4,
+          102.8,
+          231.2
+        ],
+        "helmet_status": "detected",
+        "helmet_confidence": 0.463,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "matched_anatomical_region"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.881,
+        "bbox": [
+          112.5,
+          64.6,
+          174.8,
+          231.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 3,
+        "confidence": 0.855,
+        "bbox": [
+          166.9,
+          84.8,
+          214.3,
+          228.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 4,
+        "confidence": 0.8,
+        "bbox": [
+          244.6,
+          64.0,
+          329.9,
+          231.7
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 5,
+        "confidence": 0.792,
+        "bbox": [
+          224.8,
+          157.4,
+          292.3,
+          231.5
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_08_indoor_shadowed_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_09_mixed_compliance.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Mixed compliance: workers with and without helmets",
+    "dimensions": "349x262",
+    "workers_detected": 2,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.908,
+        "bbox": [
+          193.8,
+          155.9,
+          240.5,
+          262.0
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.9,
+        "bbox": [
+          86.8,
+          193.2,
+          151.4,
+          262.0
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_09_mixed_compliance_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_10_equipment_proximity.jpg",
+    "source": "SHWD (Apache 2.0 License, wujixiu/helmet-detection)",
+    "description": "Workers near heavy machinery",
+    "dimensions": "349x239",
+    "workers_detected": 2,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.784,
+        "bbox": [
+          298.4,
+          144.7,
+          319.4,
+          228.2
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "approximate",
+        "reason": "missing_head_keypoints"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.712,
+        "bbox": [
+          267.5,
+          140.4,
+          295.3,
+          208.9
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_10_equipment_proximity_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_11_cctv_plant_v4.jpg",
+    "source": "Local CCTV Video Asset (v4.mp4)",
+    "description": "Real plant CCTV keyframe from v4.mp4",
+    "dimensions": "1280x720",
+    "workers_detected": 1,
+    "helmets_detected": 0,
+    "unassociated_helmets": 0,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.796,
+        "bbox": [
+          876.3,
+          1.6,
+          994.9,
+          208.1
+        ],
+        "helmet_status": "unknown",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "unknown",
+        "reason": "missing_head_keypoints"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_11_cctv_plant_v4_annotated.jpg"
+  },
+  {
+    "image_name": "real_img_12_cctv_indoor_v2.jpg",
+    "source": "Local CCTV Video Asset (v2.mp4)",
+    "description": "Real indoor industrial CCTV keyframe from v2.mp4",
+    "dimensions": "854x480",
+    "workers_detected": 2,
+    "helmets_detected": 1,
+    "unassociated_helmets": 1,
+    "workers": [
+      {
+        "worker_id": 1,
+        "confidence": 0.944,
+        "bbox": [
+          22.6,
+          27.4,
+          385.1,
+          475.5
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      },
+      {
+        "worker_id": 2,
+        "confidence": 0.942,
+        "bbox": [
+          447.2,
+          110.0,
+          843.5,
+          474.1
+        ],
+        "helmet_status": "not_detected",
+        "helmet_confidence": null,
+        "vest_status": "unknown",
+        "head_roi_quality": "confirmed",
+        "reason": "no_helmet_detected"
+      }
+    ],
+    "annotated_path": "outputs\\phase5_real_images\\real_img_12_cctv_indoor_v2_annotated.jpg"
+  }
+]

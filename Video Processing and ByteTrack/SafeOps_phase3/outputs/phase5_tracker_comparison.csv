@@ -1,0 +1,13 @@
+Scenario,Tracker,IDF1,HOTA,MOTA,IDSW,FP,FN,Track_IDs,GT_IDs,Fragmentation,FPS,Mean_Latency_ms,P95_Latency_ms,Peak_VRAM_MB
+1. Single worker moving,ByteTrack (Baseline),1.0,1.0,1.0,0,0,0,1,1,0,34.17,25.92,26.03,111.6
+1. Single worker moving,BoT-SORT without ReID,1.0,1.0,1.0,0,0,0,1,1,0,39.51,23.0,23.92,98.1
+2. Crossing paths,ByteTrack (Baseline),0.3774,0.4737,-0.375,2,147,16,14,2,1,36.2,26.14,34.73,68.6
+2. Crossing paths,BoT-SORT without ReID,0.4475,0.556,-0.275,3,136,14,12,2,1,38.17,24.84,27.4,142.6
+3. Workers close together,ByteTrack (Baseline),1.0,1.0,1.0,0,0,0,2,2,0,36.14,26.34,29.51,156.7
+3. Workers close together,BoT-SORT without ReID,1.0,1.0,1.0,0,0,0,2,2,0,38.05,24.95,29.99,231.4
+4. Exit and re-entry,ByteTrack (Baseline),0.188,0.3402,-2.34,1,166,0,8,1,0,38.62,24.57,26.34,206.1
+4. Exit and re-entry,BoT-SORT without ReID,0.1901,0.3426,-2.28,1,163,0,8,1,0,40.58,23.46,25.25,289.7
+5. Detection failure gap,ByteTrack (Baseline),0.4046,0.4935,-0.15,2,60,7,2,1,1,36.56,26.0,30.56,251.2
+5. Detection failure gap,BoT-SORT without ReID,0.4046,0.4935,-0.15,2,60,7,2,1,1,39.59,23.91,25.85,334.8
+6. Partial occlusion,ByteTrack (Baseline),0.2294,0.3351,-1.65,3,127,29,6,1,2,33.66,27.98,35.28,340.3
+6. Partial occlusion,BoT-SORT without ReID,0.2283,0.3326,-1.6333,3,127,28,6,1,2,35.58,26.82,25.32,357.7

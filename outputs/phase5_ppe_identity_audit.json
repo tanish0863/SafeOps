@@ -1,0 +1,58 @@
+[
+  {
+    "test": "Test A \u2014 Worker Crossing",
+    "original_track_id": 1,
+    "new_or_recovered_track_id": 1,
+    "gt_identity": "Worker A (Compliant) & Worker B (Violator)",
+    "ppe_before": "W1:detected, W2:not_detected",
+    "ppe_during_crossing": "W1:unknown, W2:unknown",
+    "compliance_before": "W1:compliant, W2:non_compliant",
+    "compliance_during": "W1:unknown, W2:unknown",
+    "history_transfer_occurred": false,
+    "false_violation_generated": false,
+    "ambiguity_handled_as_unknown": true,
+    "verdict": "PASS"
+  },
+  {
+    "test": "Test B \u2014 Temporary Occlusion",
+    "original_track_id": 1,
+    "new_or_recovered_track_id": 1,
+    "gt_identity": "Worker A (Occluded)",
+    "ppe_before": "detected (helmet)",
+    "ppe_during": "unknown (insufficient head evidence)",
+    "compliance_before": "compliant",
+    "compliance_during": "unknown",
+    "history_transfer_occurred": false,
+    "false_violation_generated": false,
+    "timer_paused_on_unknown": true,
+    "verdict": "PASS"
+  },
+  {
+    "test": "Test C \u2014 Detection Blackout",
+    "original_track_id": 1,
+    "new_or_recovered_track_id": 1,
+    "gt_identity": "Worker A (Temporary Detection Blackout)",
+    "ppe_before": "not_detected",
+    "ppe_after": "detected",
+    "compliance_before": "non_compliant",
+    "compliance_after": "compliant",
+    "history_transfer_occurred": false,
+    "false_violation_generated": false,
+    "violation_properly_resolved": true,
+    "verdict": "PASS"
+  },
+  {
+    "test": "Test D \u2014 Exit and Re-entry",
+    "original_track_id": 1,
+    "new_or_recovered_track_id": 7,
+    "gt_identity": "Worker A (Exited as Track 1, Re-entered as Track 7)",
+    "ppe_before": "detected (Track 1)",
+    "ppe_after": "not_detected (Track 7)",
+    "compliance_before": "compliant",
+    "compliance_after": "insufficient_evidence",
+    "history_transfer_occurred": false,
+    "starts_fresh_evidence": true,
+    "false_violation_generated": false,
+    "verdict": "PASS"
+  }
+]
