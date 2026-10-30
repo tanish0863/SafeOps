@@ -1,0 +1,68 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Model weights (large binary files)
+*.pt
+*.pth
+*.onnx
+*.weights
+
+# Training runs & datasets
+runs/
+datasets/
+dataset/
+dataset_head/
+hard_examples/
+debug_snapshots/
+samples/
+v2_samples_conf*/
+label_review/
+
+# Videos and large media
+videos/
+*.mp4
+*.avi
+*.mkv
+
+# Sample/test images
+v3.png
+v3_live_test_result.png
+v3_result_conf*.png
+*.jpg
+*.jpeg
+*.png
+
+# Log files
+*.log
+safety_monitor*.log
+training_restart.log
+train_v*.log
+
+# Generated reports & results
+all_models_benchmark_report.json
+v*_test_results.txt
+vi*_test_results.txt
+evaluation_report.txt
+predictions.csv
+predictions.log
+
+# Temp files
+tempCodeRunnerFile.python
+
+# Secrets
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

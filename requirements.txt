@@ -1,0 +1,21 @@
+# Industrial Safety Vision System — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# Core vision
+ultralytics>=8.2.0          # YOLOv8 (person + PPE detection)
+deep-sort-realtime>=1.3.2   # DeepSORT multi-object tracking
+opencv-python>=4.9.0        # Frame I/O and rendering
+numpy>=1.26.0
+fastapi>=0.115.0            # UI backend and WebSocket API
+uvicorn[standard]>=0.30.0   # ASGI server for the frontend/backend app
+
+# PyTorch (GPU recommended — install matching CUDA version from pytorch.org)
+# CPU-only fallback (slower but functional):
+# torch>=2.2.0
+# For CUDA 12.1:
+# torch>=2.2.0+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
+
+# PPE model training
+# (these are only needed during training, not inference)
+# roboflow>=1.1.0            # Dataset management
+# albumentations>=1.4.0      # Augmentation pipeline
