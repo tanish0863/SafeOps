@@ -1,0 +1,18 @@
+======================================================================
+VISION SYSTEM EVALUATION REPORT
+======================================================================
+
+[PERSON_DETECTION]
+  TP=9, FP=0, FN=0, Total=9
+  Accuracy: 100.00%
+
+[HELMET_DETECTION]
+  TP=4, FP=0, FN=0, Total=4
+  Accuracy: 100.00%
+
+[ZONE_DETECTION]
+  TP=3, FP=0, FN=1, Total=4
+  Accuracy: 75.00%
+
+[ERRORS]
+  Frame 11: zone - MISSED_VIOLATION

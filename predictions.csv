@@ -1,0 +1,16 @@
+frame_id,timestamp_seconds,person_present,helmet_visible,in_restricted_zone
+1,0.0,No,N/A,N/A
+2,0.03,No,N/A,N/A
+3,0.06,No,N/A,N/A
+4,0.1,No,N/A,N/A
+5,0.13,No,N/A,N/A
+6,0.16,Yes,Yes,No
+7,0.2,Yes,Yes,No
+8,0.23,Yes,No,No
+9,0.26,Yes,No,No
+10,0.3,Yes,No,No
+11,0.33,Yes,No,No
+12,0.36,Yes,No,Yes
+13,0.4,Yes,Yes,Yes
+14,0.43,Yes,Yes,Yes
+15,0.46,No,N/A,N/A
