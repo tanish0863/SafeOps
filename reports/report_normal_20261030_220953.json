@@ -1,0 +1,122 @@
+{
+  "source": "normal.jpg",
+  "processed_at": "2026-10-30T22:09:53.338499",
+  "image_width": 640,
+  "image_height": 480,
+  "overall_score": 100.0,
+  "overall_status": "GOOD",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [],
+  "recommendations": [],
+  "score_breakdown": {
+    "darkness": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "blur": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "resolution": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "glare": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "obstruction": {
+      "status": "CLEAR",
+      "penalty_applied": 0.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": true,
+      "uncertain": false,
+      "value": 161.80924479166666,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 161.81,
+        "dark_pixel_fraction": 0.0005,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": false,
+        "too_dark_by_fraction": false
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "blur": {
+      "passed": true,
+      "uncertain": false,
+      "value": 133.65,
+      "threshold": 100.0,
+      "details": {
+        "laplacian_variance": 133.65,
+        "threshold": 100.0,
+        "gray_mean": 161.81,
+        "gray_std": 16.58,
+        "uncertain": false
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "resolution": {
+      "passed": true,
+      "uncertain": false,
+      "value": 480.0,
+      "threshold": 480.0,
+      "details": {
+        "width": 640,
+        "height": 480,
+        "min_width": 640,
+        "min_height": 480,
+        "width_ok": true,
+        "height_ok": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "glare": {
+      "passed": true,
+      "uncertain": false,
+      "value": 0.0,
+      "threshold": 0.05,
+      "details": {
+        "bright_pixel_fraction": 0.0,
+        "glare_pixel_count": 0,
+        "total_pixels": 307200,
+        "bright_value_threshold": 230,
+        "bright_saturation_threshold": 30,
+        "bright_pixel_fraction_threshold": 0.05
+      },
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "obstruction": {
+    "status": "CLEAR",
+    "confidence": 0.0,
+    "details": {
+      "edge_density": 0.00501,
+      "intensity_std": 16.576,
+      "mean_intensity": 161.81,
+      "edge_density_low_threshold": 0.0008,
+      "edge_density_uncertain_threshold": 0.004,
+      "std_low_threshold": 3.5,
+      "std_uncertain_threshold": 10.0,
+      "is_dark": false,
+      "is_bright": false,
+      "is_blurry": false
+    },
+    "issues": [],
+    "recommendations": [],
+    "note": "Obstruction detection is an approximate heuristic. Results marked UNCERTAIN should not be treated as confirmed failures."
+  }
+}

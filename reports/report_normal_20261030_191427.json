@@ -1,0 +1,50 @@
+{
+  "source": "normal.jpg",
+  "processed_at": "2026-10-30T19:14:27.347428",
+  "image_width": 640,
+  "image_height": 480,
+  "overall_score": 90.0,
+  "overall_status": "GOOD",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [
+    "Camera may be physically obstructed (edge density=0.0050, intensity std=16.58)"
+  ],
+  "recommendations": [
+    "Inspect the camera lens for physical blockage (e.g. lens cap, tape, or debris).",
+    "Check that the camera field of view has not been accidentally covered."
+  ],
+  "score_breakdown": {
+    "darkness": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "blur": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "resolution": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "glare": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "obstruction": {
+      "status": "OBSTRUCTED",
+      "penalty_applied": 10.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": true,
+      "value": 161.80924479166666,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 161.81,
+        "dark_pixel_fraction": 0.0005,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": false,
+        "too_dark_by_fraction": 

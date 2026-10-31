@@ -1,0 +1,109 @@
+{
+  "source": "construction_cctv.jpg",
+  "processed_at": "2026-10-30T19:31:02.033519",
+  "image_width": 1672,
+  "image_height": 941,
+  "overall_score": 100.0,
+  "overall_status": "GOOD",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [],
+  "recommendations": [],
+  "score_breakdown": {
+    "darkness": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "blur": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "resolution": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "glare": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "obstruction": {
+      "status": "CLEAR",
+      "penalty_applied": 0.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": true,
+      "value": 95.25995009381245,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 95.26,
+        "dark_pixel_fraction": 0.2379,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": false,
+        "too_dark_by_fraction": false
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "blur": {
+      "passed": true,
+      "value": 2093.88,
+      "threshold": 100.0,
+      "details": {
+        "laplacian_variance": 2093.88,
+        "threshold": 100.0
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "resolution": {
+      "passed": true,
+      "value": 941.0,
+      "threshold": 480.0,
+      "details": {
+        "width": 1672,
+        "height": 941,
+        "min_width": 640,
+        "min_height": 480,
+        "width_ok": true,
+        "height_ok": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "glare": {
+      "passed": true,
+      "value": 0.0016,
+      "threshold": 0.05,
+      "details": {
+        "bright_pixel_fraction": 0.0016,
+        "glare_pixel_count": 2535,
+        "total_pixels": 1573352,
+        "bright_value_threshold": 230,
+        "bright_saturation_threshold": 30,
+        "bright_pixel_fraction_threshold": 0.05
+      },
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "obstruction": {
+    "status": "CLEAR",
+    "confidence": 0.0,
+    "details": {
+      "edge_density": 0.21536,
+      "intensity_std": 49.552,
+      "edge_score": 0.0,
+      "std_score": 0.0,
+      "edge_density_low_threshold": 0.01,
+      "edge_density_uncertain_threshold": 0.04,
+      "std_low_threshold": 8.0,
+      "std_uncertain_threshold": 20.0
+    },
+    "issues": [],
+    "recommendations": [],
+    "note": "Obstruction detection is an approximate heuristic. Results marked UNCERTAIN should not be treated as confirmed failures."
+  }
+}

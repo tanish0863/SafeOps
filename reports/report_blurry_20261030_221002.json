@@ -1,0 +1,135 @@
+{
+  "source": "blurry.jpg",
+  "processed_at": "2026-10-30T22:10:02.052821",
+  "image_width": 640,
+  "image_height": 480,
+  "overall_score": 75.0,
+  "overall_status": "WARNING",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [
+    "Image appears blurry (Laplacian variance=0.27, threshold=100.0)",
+    "Obstruction status is uncertain: severe blur reduces edge density (0.00000), preventing reliable physical obstruction confirmation."
+  ],
+  "recommendations": [
+    "Clean the camera lens and ensure it is free from smudges or condensation.",
+    "Adjust the camera focus. If using an auto-focus camera, ensure the subject is within the focus range."
+  ],
+  "score_breakdown": {
+    "darkness": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "blur": {
+      "failed": true,
+      "uncertain": false,
+      "penalty_applied": 25.0
+    },
+    "resolution": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "glare": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "obstruction": {
+      "status": "UNCERTAIN",
+      "penalty_applied": 0.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": true,
+      "uncertain": false,
+      "value": 161.91229166666668,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 161.91,
+        "dark_pixel_fraction": 0.0,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": false,
+        "too_dark_by_fraction": false
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "blur": {
+      "passed": false,
+      "uncertain": false,
+      "value": 0.27,
+      "threshold": 100.0,
+      "details": {
+        "laplacian_variance": 0.27,
+        "threshold": 100.0,
+        "gray_mean": 161.91,
+        "gray_std": 15.05,
+        "uncertain": false
+      },
+      "issues": [
+        "Image appears blurry (Laplacian variance=0.27, threshold=100.0)"
+      ],
+      "recommendations": [
+        "Clean the camera lens and ensure it is free from smudges or condensation.",
+        "Adjust the camera focus. If using an auto-focus camera, ensure the subject is within the focus range."
+      ]
+    },
+    "resolution": {
+      "passed": true,
+      "uncertain": false,
+      "value": 480.0,
+      "threshold": 480.0,
+      "details": {
+        "width": 640,
+        "height": 480,
+        "min_width": 640,
+        "min_height": 480,
+        "width_ok": true,
+        "height_ok": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "glare": {
+      "passed": true,
+      "uncertain": false,
+      "value": 0.0,
+      "threshold": 0.05,
+      "details": {
+        "bright_pixel_fraction": 0.0,
+        "glare_pixel_count": 0,
+        "total_pixels": 307200,
+        "bright_value_threshold": 230,
+        "bright_saturation_threshold": 30,
+        "bright_pixel_fraction_threshold": 0.05
+      },
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "obstruction": {
+    "status": "UNCERTAIN",
+    "confidence": 0.4,
+    "details": {
+      "edge_density": 0.0,
+      "intensity_std": 15.054,
+      "mean_intensity": 161.91,
+      "edge_density_low_threshold": 0.0008,
+      "edge_density_uncertain_threshold": 0.004,
+      "std_low_threshold": 3.5,
+      "std_uncertain_threshold": 10.0,
+      "is_dark": false,
+      "is_bright": false,
+      "is_blurry": true
+    },
+    "issues": [
+      "Obstruction status is uncertain: severe blur reduces edge density (0.00000), preventing reliable physical obstruction confirmation."
+    ],
+    "recommendations": [],
+    "note": "Obstruction detection is an approximate heuristic. Results marked UNCERTAIN should not be treated as confirmed failures."
+  }
+}

@@ -1,0 +1,413 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SAFEOPS — Design system v2.
+ *
+ * Deep midnight-navy base with layered steel-blue surfaces, an electric amber
+ * brand accent, refined cyan for technical/selected states, muted emerald for
+ * compliance, coral for critical violations and warm amber for review states.
+ * Surfaces use "panel morphism": layered tonal gradients, restrained inner
+ * highlights, hairline borders and soft realistic shadows. All oklch.
+ */
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-glass: var(--glass);
+  --color-glass-strong: var(--glass-strong);
+  --color-glass-border: var(--glass-border);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-critical: var(--critical);
+  --color-critical-foreground: var(--critical-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Deep midnight navy */
+  --background: oklch(0.145 0.024 262);
+  --foreground: oklch(0.955 0.008 90);
+
+  /* Rich slate / steel-blue layered surfaces */
+  --card: oklch(0.192 0.03 260);
+  --card-foreground: oklch(0.955 0.008 90);
+  --popover: oklch(0.21 0.032 260);
+  --popover-foreground: oklch(0.955 0.008 90);
+
+  /* Electric amber — the brand accent */
+  --primary: oklch(0.78 0.15 72);
+  --primary-foreground: oklch(0.2 0.05 75);
+
+  /* Steel-blue interactive surfaces */
+  --secondary: oklch(0.27 0.032 258);
+  --secondary-foreground: oklch(0.955 0.008 90);
+  --muted: oklch(0.245 0.028 258);
+  --muted-foreground: oklch(0.7 0.022 250);
+  --accent: oklch(0.3 0.038 256);
+  --accent-foreground: oklch(0.955 0.008 90);
+
+  --destructive: oklch(0.63 0.2 28);
+  --destructive-foreground: oklch(0.98 0.005 90);
+
+  /* Refined cyan — technical highlights & selected states */
+  --info: oklch(0.8 0.1 212);
+  --info-foreground: oklch(0.2 0.04 220);
+
+  /* Status palette (muted industrial) */
+  --success: oklch(0.72 0.13 162);
+  --success-foreground: oklch(0.19 0.04 162);
+  --warning: oklch(0.84 0.12 84);
+  --warning-foreground: oklch(0.24 0.05 84);
+  --critical: oklch(0.64 0.19 30);
+  --critical-foreground: oklch(0.98 0.005 90);
+
+  --border: oklch(0.86 0.02 252 / 11%);
+  --input: oklch(0.86 0.02 252 / 17%);
+  --ring: oklch(0.78 0.15 72);
+
+  /* Glass surface tokens */
+  --glass: oklch(1 0 0 / 5%);
+  --glass-strong: oklch(1 0 0 / 9%);
+  --glass-border: oklch(0.92 0.02 252 / 15%);
+
+  /* Semantic chart palette */
+  --chart-1: oklch(0.78 0.15 72); /* amber — trend / primary series */
+  --chart-2: oklch(0.72 0.13 162); /* emerald — compliant */
+  --chart-3: oklch(0.84 0.12 84); /* warm amber — review */
+  --chart-4: oklch(0.8 0.1 212); /* cyan — technical series */
+  --chart-5: oklch(0.64 0.19 30); /* coral — violations */
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    background-image:
+      radial-gradient(60rem 40rem at 85% -15%, oklch(0.55 0.09 250 / 16%), transparent 62%),
+      radial-gradient(52rem 36rem at -10% 30%, oklch(0.5 0.07 240 / 12%), transparent 58%),
+      radial-gradient(46rem 32rem at 58% 118%, oklch(0.78 0.15 72 / 6%), transparent 60%);
+    background-attachment: fixed;
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
+    border-radius: 5px;
+    border: 2px solid var(--color-background);
+  }
+}
+
+/* ---------- Surface system (card morphism) ---------- */
+
+/*
+ * panel — the engineered base surface: layered tonal gradient (lighter at the
+ * top), a restrained inner highlight along the top edge, a hairline border and
+ * a soft, realistic drop shadow. Deliberately more opaque than glass so dense
+ * dashboard content stays readable.
+ */
+@utility panel {
+  background:
+    linear-gradient(180deg, oklch(0.26 0.038 258 / 85%), oklch(0.2 0.03 260 / 92%) 40%, oklch(0.185 0.028 260 / 96%)),
+    var(--card);
+  border: 1px solid oklch(0.86 0.02 252 / 13%);
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 10%),
+    0 1px 2px oklch(0 0 0 / 30%),
+    0 12px 32px -18px oklch(0 0 0 / 55%);
+}
+
+/* panel-raised — statistic & feature cards: slightly lighter top, deeper lift */
+@utility panel-raised {
+  background:
+    linear-gradient(165deg, oklch(0.29 0.045 256 / 90%), oklch(0.21 0.032 259 / 95%) 45%, oklch(0.19 0.028 260 / 98%)),
+    var(--card);
+  border: 1px solid oklch(0.86 0.02 252 / 15%);
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 13%),
+    0 1px 2px oklch(0 0 0 / 30%),
+    0 20px 44px -22px oklch(0 0 0 / 60%);
+}
+
+/* panel-sunken — wells and canvases that sit behind content */
+@utility panel-sunken {
+  background: linear-gradient(180deg, oklch(0.13 0.022 262), oklch(0.155 0.026 261));
+  border: 1px solid oklch(0.86 0.02 252 / 8%);
+  box-shadow: inset 0 2px 10px oklch(0 0 0 / 35%);
+}
+
+/* Frosted panel: blur + translucent gradient + inner top highlight */
+@utility glass-panel {
+  background: linear-gradient(165deg, var(--glass-strong), var(--glass) 55%, oklch(1 0 0 / 3%));
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 12%),
+    0 18px 40px -24px oklch(0 0 0 / 60%);
+}
+
+/* Lighter glass surface — kept for landing chrome (nav, footer, panels) */
+@utility glass-card {
+  background: linear-gradient(170deg, oklch(0.42 0.06 255 / 26%), oklch(0.26 0.035 258 / 38%) 60%);
+  backdrop-filter: blur(16px) saturate(135%);
+  border: 1px solid oklch(0.88 0.02 252 / 14%);
+  box-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 11%),
+    0 14px 36px -22px oklch(0 0 0 / 60%);
+}
+
+/* Hover lift + soft amber glow for interactive cards */
+@utility hover-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: oklch(0.9 0.02 252 / 26%);
+    box-shadow:
+      inset 0 1px 0 oklch(1 0 0 / 14%),
+      0 24px 48px -22px oklch(0 0 0 / 65%),
+      0 0 0 1px oklch(0.78 0.15 72 / 16%),
+      0 8px 28px -8px oklch(0.78 0.15 72 / 22%);
+  }
+}
+
+/* ---------- Interactive accents ---------- */
+
+/* Warm glow for primary CTAs */
+@utility glow-primary {
+  box-shadow:
+    0 10px 30px -10px oklch(0.78 0.15 72 / 45%),
+    0 0 0 1px oklch(0.78 0.15 72 / 25%);
+}
+
+/* Gradient headline text */
+@utility text-gradient {
+  background: linear-gradient(100deg, oklch(0.85 0.13 80), oklch(0.78 0.15 62) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Industrial texture ---------- */
+
+/* Blueprint grid overlays */
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(to right, oklch(0.7 0.05 240 / 6%) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.7 0.05 240 / 6%) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@utility bg-blueprint-fine {
+  background-image:
+    linear-gradient(to right, oklch(0.7 0.05 240 / 5%) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.7 0.05 240 / 5%) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Cinematic overlays for hero imagery */
+@utility bg-hero-shade {
+  background:
+    linear-gradient(
+      to right,
+      oklch(0.12 0.025 262 / 94%) 0%,
+      oklch(0.13 0.026 261 / 72%) 45%,
+      oklch(0.14 0.028 260 / 35%) 100%
+    ),
+    linear-gradient(to top, oklch(0.145 0.024 262) 2%, oklch(0.145 0.024 262 / 0%) 45%);
+}
+
+@utility bg-panel-shade {
+  background: linear-gradient(to top, oklch(0.145 0.024 262 / 96%) 0%, oklch(0.145 0.024 262 / 40%) 100%);
+}
+
+/* Hairline technical divider */
+@utility divider-tech {
+  background-image: linear-gradient(to right, var(--color-border) 0%, transparent 100%);
+  height: 1px;
+}
+
+/* Corner brackets used on blueprint panels */
+@utility corner-brackets {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: var(--color-primary);
+    opacity: 0.7;
+  }
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  &::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+}
+
+/* ---------- Motion ---------- */
+
+/* Vertical scan line for the detection preview */
+@keyframes safeops-scan {
+  0% {
+    top: -2%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 102%;
+    opacity: 0;
+  }
+}
+
+@utility animate-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+  box-shadow: 0 0 12px oklch(0.78 0.15 72 / 60%);
+  animation: safeops-scan 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes safeops-pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@utility animate-pulse-dot {
+  animation: safeops-pulse-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes safeops-scroll-hint {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@utility animate-scroll-hint {
+  animation: safeops-scroll-hint 1.8s ease-in-out infinite;
+}
+
+/* Soft fade-in used on sections and panels */
+@keyframes safeops-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-rise {
+  animation: safeops-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}

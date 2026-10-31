@@ -1,0 +1,135 @@
+{
+  "source": "dark.jpg",
+  "processed_at": "2026-10-30T19:18:40.719055",
+  "image_width": 640,
+  "image_height": 480,
+  "overall_score": 35.0,
+  "overall_status": "POOR",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [
+    "Insufficient lighting detected (mean intensity=19.2, dark pixel fraction=100.0%)",
+    "Image appears blurry (Laplacian variance=1.48, threshold=100.0)",
+    "Camera may be physically obstructed (edge density=0.0000, intensity std=1.89)"
+  ],
+  "recommendations": [
+    "Improve the lighting in the monitored area or increase camera exposure.",
+    "Consider adding supplementary lighting or repositioning the camera away from very dark backgrounds.",
+    "Clean the camera lens and ensure it is free from smudges or condensation.",
+    "Adjust the camera focus. If using an auto-focus camera, ensure the subject is within the focus range.",
+    "Inspect the camera lens for physical blockage (e.g. lens cap, tape, or debris).",
+    "Check that the camera field of view has not been accidentally covered."
+  ],
+  "score_breakdown": {
+    "darkness": {
+      "failed": true,
+      "penalty_applied": 30.0
+    },
+    "blur": {
+      "failed": true,
+      "penalty_applied": 25.0
+    },
+    "resolution": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "glare": {
+      "failed": false,
+      "penalty_applied": 0
+    },
+    "obstruction": {
+      "status": "OBSTRUCTED",
+      "penalty_applied": 10.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": false,
+      "value": 19.228206380208334,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 19.23,
+        "dark_pixel_fraction": 1.0,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": true,
+        "too_dark_by_fraction": true
+      },
+      "issues": [
+        "Insufficient lighting detected (mean intensity=19.2, dark pixel fraction=100.0%)"
+      ],
+      "recommendations": [
+        "Improve the lighting in the monitored area or increase camera exposure.",
+        "Consider adding supplementary lighting or repositioning the camera away from very dark backgrounds."
+      ]
+    },
+    "blur": {
+      "passed": false,
+      "value": 1.48,
+      "threshold": 100.0,
+      "details": {
+        "laplacian_variance": 1.48,
+        "threshold": 100.0
+      },
+      "issues": [
+        "Image appears blurry (Laplacian variance=1.48, threshold=100.0)"
+      ],
+      "recommendations": [
+        "Clean the camera lens and ensure it is free from smudges or condensation.",
+        "Adjust the camera focus. If using an auto-focus camera, ensure the subject is within the focus range."
+      ]
+    },
+    "resolution": {
+      "passed": true,
+      "value": 480.0,
+      "threshold": 480.0,
+      "details": {
+        "width": 640,
+        "height": 480,
+        "min_width": 640,
+        "min_height": 480,
+        "width_ok": true,
+        "height_ok": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "glare": {
+      "passed": true,
+      "value": 0.0,
+      "threshold": 0.05,
+      "details": {
+        "bright_pixel_fraction": 0.0,
+        "glare_pixel_count": 0,
+        "total_pixels": 307200,
+        "bright_value_threshold": 230,
+        "bright_saturation_threshold": 30,
+        "bright_pixel_fraction_threshold": 0.05
+      },
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "obstruction": {
+    "status": "OBSTRUCTED",
+    "confidence": 1.0,
+    "details": {
+      "edge_density": 0.0,
+      "intensity_std": 1.888,
+      "edge_score": 1.0,
+      "std_score": 1.0,
+      "edge_density_low_threshold": 0.01,
+      "edge_density_uncertain_threshold": 0.04,
+      "std_low_threshold": 8.0,
+      "std_uncertain_threshold": 20.0
+    },
+    "issues": [
+      "Camera may be physically obstructed (edge density=0.0000, intensity std=1.89)"
+    ],
+    "recommendations": [
+      "Inspect the camera lens for physical blockage (e.g. lens cap, tape, or debris).",
+      "Check that the camera field of view has not been accidentally covered."
+    ],
+    "note": "Obstruction detection is an approximate heuristic. Results marked UNCERTAIN should not be treated as confirmed failures."
+  }
+}

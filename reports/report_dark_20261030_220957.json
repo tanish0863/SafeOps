@@ -1,0 +1,142 @@
+{
+  "source": "dark.jpg",
+  "processed_at": "2026-10-30T22:09:57.806974",
+  "image_width": 640,
+  "image_height": 480,
+  "overall_score": 70.0,
+  "overall_status": "WARNING",
+  "disclaimer": "This score is a rule-based heuristic. It is not a scientifically validated probability of PPE detection success.",
+  "issues": [
+    "Insufficient lighting detected (mean intensity=19.2, dark pixel fraction=100.0%)",
+    "Focus/blur cannot be reliably assessed due to severe underexposure (mean intensity=19.2, threshold=35.0)",
+    "Obstruction status is uncertain: low scene brightness (mean=19.2) prevents distinguishing physical obstruction from darkness."
+  ],
+  "recommendations": [
+    "Improve the lighting in the monitored area or increase camera exposure.",
+    "Consider adding supplementary lighting or repositioning the camera away from very dark backgrounds.",
+    "Ensure adequate scene lighting before evaluating camera focus."
+  ],
+  "score_breakdown": {
+    "darkness": {
+      "failed": true,
+      "uncertain": false,
+      "penalty_applied": 30.0
+    },
+    "blur": {
+      "failed": false,
+      "uncertain": true,
+      "penalty_applied": 0.0,
+      "note": "Result is uncertain due to insufficient visual detail; no penalty applied."
+    },
+    "resolution": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "glare": {
+      "failed": false,
+      "uncertain": false,
+      "penalty_applied": 0.0
+    },
+    "obstruction": {
+      "status": "UNCERTAIN",
+      "penalty_applied": 0.0,
+      "note": "Penalty is only applied when status is OBSTRUCTED. UNCERTAIN results do not reduce the score."
+    }
+  },
+  "checks": {
+    "darkness": {
+      "passed": false,
+      "uncertain": false,
+      "value": 19.228206380208334,
+      "threshold": 60.0,
+      "details": {
+        "mean_intensity": 19.23,
+        "dark_pixel_fraction": 1.0,
+        "dark_pixel_value_threshold": 50,
+        "dark_pixel_fraction_threshold": 0.4,
+        "too_dark_by_mean": true,
+        "too_dark_by_fraction": true
+      },
+      "issues": [
+        "Insufficient lighting detected (mean intensity=19.2, dark pixel fraction=100.0%)"
+      ],
+      "recommendations": [
+        "Improve the lighting in the monitored area or increase camera exposure.",
+        "Consider adding supplementary lighting or repositioning the camera away from very dark backgrounds."
+      ]
+    },
+    "blur": {
+      "passed": false,
+      "uncertain": true,
+      "value": 1.48,
+      "threshold": 100.0,
+      "details": {
+        "laplacian_variance": 1.48,
+        "threshold": 100.0,
+        "gray_mean": 19.23,
+        "gray_std": 1.89,
+        "uncertain": true
+      },
+      "issues": [
+        "Focus/blur cannot be reliably assessed due to severe underexposure (mean intensity=19.2, threshold=35.0)"
+      ],
+      "recommendations": [
+        "Ensure adequate scene lighting before evaluating camera focus."
+      ]
+    },
+    "resolution": {
+      "passed": true,
+      "uncertain": false,
+      "value": 480.0,
+      "threshold": 480.0,
+      "details": {
+        "width": 640,
+        "height": 480,
+        "min_width": 640,
+        "min_height": 480,
+        "width_ok": true,
+        "height_ok": true
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "glare": {
+      "passed": true,
+      "uncertain": false,
+      "value": 0.0,
+      "threshold": 0.05,
+      "details": {
+        "bright_pixel_fraction": 0.0,
+        "glare_pixel_count": 0,
+        "total_pixels": 307200,
+        "bright_value_threshold": 230,
+        "bright_saturation_threshold": 30,
+        "bright_pixel_fraction_threshold": 0.05
+      },
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "obstruction": {
+    "status": "UNCERTAIN",
+    "confidence": 0.5,
+    "details": {
+      "edge_density": 0.0,
+      "intensity_std": 1.888,
+      "mean_intensity": 19.23,
+      "edge_density_low_threshold": 0.0008,
+      "edge_density_uncertain_threshold": 0.004,
+      "std_low_threshold": 3.5,
+      "std_uncertain_threshold": 10.0,
+      "is_dark": true,
+      "is_bright": false,
+      "is_blurry": false
+    },
+    "issues": [
+      "Obstruction status is uncertain: low scene brightness (mean=19.2) prevents distinguishing physical obstruction from darkness."
+    ],
+    "recommendations": [],
+    "note": "Obstruction detection is an approximate heuristic. Results marked UNCERTAIN should not be treated as confirmed failures."
+  }
+}
